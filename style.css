@@ -19,6 +19,8 @@ body {
   background-color: #19393e;
   border-radius: 1rem;
 
+  max-width: 600px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,4 +73,26 @@ body {
 
 .generate-btn:active {
   transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #19393e;
+    border-radius: 1rem;
+  }
+
+  .password-generator h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 40px;
+  }
+
+  .password-generator input {
+    padding: 1rem;
+    padding-right: 40%;
+    border-radius: 1.5rem;
+  }
 }
